@@ -12,7 +12,7 @@ BuildRequires:	fish-devel
 BuildRequires:	meson >= 0.48.0
 BuildRequires:	ninja
 BuildRequires:	rpmbuild(macros) >= 1.736
-BuildRequires:	scdoc >= 1.9.2
+BuildRequires:	scdoc
 BuildRequires:	systemd-devel
 BuildRequires:	wayland-devel
 BuildRequires:	wayland-protocols >= 1.14
