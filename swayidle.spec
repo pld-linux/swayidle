@@ -16,6 +16,7 @@ BuildRequires:	scdoc
 BuildRequires:	systemd-devel
 BuildRequires:	wayland-devel
 BuildRequires:	wayland-protocols >= 1.14
+Suggests:	swaylock
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
