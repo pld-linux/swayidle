@@ -1,11 +1,11 @@
 Summary:	Idle management daemon for Wayland
 Name:		swayidle
-Version:	1.6
+Version:	1.7
 Release:	1
 License:	MIT
 Group:		Applications
 Source0:	https://github.com/swaywm/swayidle/releases/download/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	fb24916f9c25a3c85665b3112183f097
+# Source0-md5:	2b656875c65795ee44be45f8c2bd19fd
 URL:		https://github.com/swaywm/swayidle
 BuildRequires:	bash-completion
 BuildRequires:	fish-devel
