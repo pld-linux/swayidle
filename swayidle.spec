@@ -11,6 +11,7 @@ BuildRequires:	bash-completion
 BuildRequires:	fish-devel
 BuildRequires:	meson >= 0.59.0
 BuildRequires:	ninja
+BuildRequires:	pkgconfig
 BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	scdoc
