@@ -1,23 +1,22 @@
 Summary:	Idle management daemon for Wayland
 Name:		swayidle
-Version:	1.7.1
-Release:	2
+Version:	1.8.0
+Release:	1
 License:	MIT
 Group:		Applications
 Source0:	https://github.com/swaywm/swayidle/releases/download/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	7032c54a0357d92173e7a823e09a9b8c
-Patch0:		printf_size_t.patch
+# Source0-md5:	cbc80fb71c19a5d8d058d7cd5975d1eb
 URL:		https://github.com/swaywm/swayidle
 BuildRequires:	bash-completion
 BuildRequires:	fish-devel
-BuildRequires:	meson >= 0.48.0
+BuildRequires:	meson >= 0.59.0
 BuildRequires:	ninja
 BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	scdoc
 BuildRequires:	systemd-devel
 BuildRequires:	wayland-devel
-BuildRequires:	wayland-protocols >= 1.14
+BuildRequires:	wayland-protocols >= 1.27
 Suggests:	swaylock
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -57,7 +56,6 @@ ZSH completion for swayidle.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %meson build
