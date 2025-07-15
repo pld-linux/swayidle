@@ -59,12 +59,12 @@ ZSH completion for swayidle.
 %setup -q
 
 %build
-%meson build
-%ninja_build -C build
+%meson
+%meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%ninja_install -C build
+%meson_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
