@@ -8,7 +8,7 @@ Group:		Applications
 Source0:	https://github.com/swaywm/swayidle/releases/download/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	cbc80fb71c19a5d8d058d7cd5975d1eb
 URL:		https://github.com/swaywm/swayidle
-BuildRequires:	bash-completion
+BuildRequires:	bash-completion-devel >= 1:2.0
 BuildRequires:	fish-devel
 BuildRequires:	meson >= 0.59.0
 BuildRequires:	ninja
@@ -16,6 +16,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	scdoc
+# or elogind-devel with -Dlogind-provider=elogind
 BuildRequires:	systemd-devel
 BuildRequires:	wayland-devel
 BuildRequires:	wayland-protocols >= 1.27
@@ -77,7 +78,10 @@ Dopełnianie argumentów swayidle dla ZSH.
 %setup -q
 
 %build
-%meson
+%meson \
+	-Dlogind=enabled \
+	-Dlogind-provider=systemd \
+	-Dman-pages=enabled
 
 %meson_build
 
