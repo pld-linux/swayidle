@@ -13,7 +13,7 @@ BuildRequires:	meson >= 0.59.0
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
 BuildRequires:	rpm-build >= 4.6
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	scdoc
 BuildRequires:	systemd-devel
 BuildRequires:	wayland-devel
@@ -60,10 +60,12 @@ ZSH completion for swayidle.
 
 %build
 %meson
+
 %meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %meson_install
 
 %clean
