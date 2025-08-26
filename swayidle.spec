@@ -1,4 +1,5 @@
 Summary:	Idle management daemon for Wayland
+Summary(pl.UTF-8):	Demon zarządzający bezczynnością dla Waylanda
 Name:		swayidle
 Version:	1.8.0
 Release:	1
@@ -25,8 +26,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is sway's idle management daemon, swayidle. It is compatible with
 any Wayland compositor which implements the KDE idle protocol.
 
+%description -l pl.UTF-8
+Ten pakiet zawiera demona swaya zarządzającego bezczynnością -
+swayidle. Jest zgodny z dowolnym kompozytorem Waylanda implementującym
+protokół KDE idle.
+
 %package -n bash-completion-swayidle
 Summary:	Bash completion for swayidle
+Summary(pl.UTF-8):	Bashowe dopełnianie argumentów swayidle
 Group:		Applications/Shells
 Requires:	%{name} = %{version}-%{release}
 Requires:	bash-completion >= 1:2.0
@@ -35,8 +42,12 @@ BuildArch:	noarch
 %description -n bash-completion-swayidle
 Bash completion for swayidle.
 
+%description -n bash-completion-swayidle -l pl.UTF-8
+Bashowe dopełnianie argumentów dla swayidle.
+
 %package -n fish-completion-swayidle
 Summary:	fish-completion for swayidle
+Summary(pl.UTF-8):	Dopełnianie argumentów swayidle dla powłoki fish
 Group:		Applications/Shells
 Requires:	%{name} = %{version}-%{release}
 Requires:	fish
@@ -45,8 +56,12 @@ BuildArch:	noarch
 %description -n fish-completion-swayidle
 fish-completion for swayidle.
 
+%description -n fish-completion-swayidle -l pl.UTF-8
+Dopełnianie argumentów swayidle dla powłoki fish.
+
 %package -n zsh-completion-swayidle
 Summary:	ZSH completion for swayidle
+Summary(pl.UTF-8):	Dopełnianie argumentów swayidle dla ZSH
 Group:		Applications/Shells
 Requires:	%{name} = %{version}-%{release}
 Requires:	zsh
@@ -54,6 +69,9 @@ BuildArch:	noarch
 
 %description -n zsh-completion-swayidle
 ZSH completion for swayidle.
+
+%description -n zsh-completion-swayidle -l pl.UTF-8
+Dopełnianie argumentów swayidle dla ZSH.
 
 %prep
 %setup -q
