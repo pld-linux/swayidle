@@ -1,12 +1,12 @@
 Summary:	Idle management daemon for Wayland
 Summary(pl.UTF-8):	Demon zarządzający bezczynnością dla Waylanda
 Name:		swayidle
-Version:	1.8.0
+Version:	1.9.0
 Release:	1
 License:	MIT
 Group:		Applications
-Source0:	https://github.com/swaywm/swayidle/releases/download/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	cbc80fb71c19a5d8d058d7cd5975d1eb
+Source0:	https://github.com/swaywm/swayidle/releases/download/v%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	b5be689e783331def72b03af92a9bf9b
 URL:		https://github.com/swaywm/swayidle
 BuildRequires:	bash-completion-devel >= 1:2.0
 BuildRequires:	fish-devel
@@ -19,7 +19,7 @@ BuildRequires:	scdoc
 # or elogind-devel with -Dlogind-provider=elogind
 BuildRequires:	systemd-devel
 BuildRequires:	wayland-devel
-BuildRequires:	wayland-protocols >= 1.27
+BuildRequires:	wayland-protocols >= 1.40
 Suggests:	swaylock
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
