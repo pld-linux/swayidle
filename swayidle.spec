@@ -1,12 +1,12 @@
 Summary:	Idle management daemon for Wayland
 Summary(pl.UTF-8):	Demon zarządzający bezczynnością dla Waylanda
 Name:		swayidle
-Version:	1.9.0
+Version:	1.9.1
 Release:	1
 License:	MIT
 Group:		Applications
 Source0:	https://github.com/swaywm/swayidle/releases/download/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	b5be689e783331def72b03af92a9bf9b
+# Source0-md5:	ac5c8714dff9a2d2de0ad0d1ebddcbb1
 URL:		https://github.com/swaywm/swayidle
 BuildRequires:	bash-completion-devel >= 1:2.0
 BuildRequires:	fish-devel
